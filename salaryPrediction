@@ -1,0 +1,28 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import linear_model
+
+//importing csv file of past data
+df= pd.read_csv("---location of csv file----")
+
+//ploting scatter diagram of the data
+plt.scatter(df.year , df.salary)
+
+//import data which is given for prediction
+pdata = pd.read_csv(....file location..)
+
+reg= linear_model.LinearRegression()
+//fitting the previous data
+reg.fit(df[[year]], df.salary)
+
+//...prediction of salary
+re.predict(pdata)
+
+//store the predicting salary
+salryies=re.predict(pdata)
+
+pdata["salary"]=salaryies
+
+//converting to csv file
+pdata.to_csv(...lovation for storing data\\file name).
